@@ -143,4 +143,4 @@ MIT
 
 ## Authors
 
-Research Team - Global Market Contagion Project
+Kriti Karunam
