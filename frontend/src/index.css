@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Grid background effect */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(180, 240, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180, 240, 0, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(180, 240, 0, 0.1);
+}
+
+/* Neon glow button */
+.neon-btn {
+  background: linear-gradient(135deg, #B4F000 0%, #7FA800 100%);
+  box-shadow: 0 0 20px rgba(180, 240, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 0 30px rgba(180, 240, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B4F000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9AD000;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid rgba(180, 240, 0, 0.1);
+  border-top: 3px solid #B4F000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
